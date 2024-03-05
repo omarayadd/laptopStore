@@ -1,24 +1,24 @@
-// Login.js
 import React, { useRef } from "react";
-import { useRegisteredEmail } from "../components/RegisteredEmailProvider";
 import { useNavigate } from "react-router-dom";
+import { useRegisteredEmail } from "../components/RegisteredEmailProvider";
 
 const Login = () => {
     const formRefs = useRef({});
     const navigate = useNavigate();
-   // const { registeredEmail } = useRegisteredEmail();
-    const {checkEmailExists } = useRegisteredEmail();
+    const { checkUserExists } = useRegisteredEmail(); // Ensure checkUserExists is imported
+    const { setIsLoggedIn } = useRegisteredEmail(); 
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const enteredEmail = formRefs.current["email"].value;
+        const enteredPassword = formRefs.current["password"].value;
 
-        // Check if entered email matches registered email
-        if (checkEmailExists(enteredEmail)) {
-            navigate('/home')
+        if (checkUserExists(enteredEmail, enteredPassword)) {
+            setIsLoggedIn(true);
+            navigate('/home'); // Redirect to home page
         } else {
-            // Email does not match
-            alert("Email not registered");
+            // Email or password is incorrect
+            alert("Email or password is incorrect");
         }
     };
 

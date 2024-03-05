@@ -18,7 +18,7 @@ body{
 
 .header-container h2{
     text-decoration: none;  
-    margin-left: 5%;
+    margin-left: 15%;
     color: rgb(191, 238, 238);
 }
 
@@ -33,6 +33,34 @@ body{
 .login-link{
     margin-right: 30%;
     margin-top: 30px;
+}
+
+.header-container.logged-in .login-part {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+
+.header-container.logged-in .login-part > * {
+    margin-right: 20px;
+}
+
+.cart-items{
+    position: relative;
+}
+
+span{
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  font-size: 19px;
+  background-color: blue;
+  border-radius: 50%;
+  bottom: -10px;
+  right: -35%;
+  color: white;
+  text-align: center;
 }
 
 
@@ -64,4 +92,34 @@ body{
     height: 40px;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+
+/* Home page */
+
+.home-idea{
+    background-image: url("./images/laptops.jpg");
+    height: 600px;
+    background-size: cover;
+}
+
+.home-idea h2{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(280px);
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(33, 37, 168);
+    overflow-wrap: break-word;
+}
+
+.product-row{
+    display: flex;
+}
+
+.product-card{
+    margin: auto;
+    margin-top: 30px;
+    width: 30%;
 }

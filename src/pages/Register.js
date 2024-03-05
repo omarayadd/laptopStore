@@ -5,14 +5,19 @@ import { useRegisteredEmail } from "../components/RegisteredEmailProvider";
 const Register = () => {
     const formRefs = useRef({});
     const navigate = useNavigate();
-    const { setRegisteredEmail, checkEmailExists } = useRegisteredEmail();
+    const { registerUser, checkEmailExists } = useRegisteredEmail(); // Ensure registerUser is imported
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = {};
         let password = formRefs.current["password"].value;
         let confirmPassword = formRefs.current["confirmPassword"].value;
+        let email = formRefs.current["email"].value;
         const enteredEmail = formRefs.current["email"].value;
+        if(email==="" || confirmPassword==="" || password===""){
+            alert("Please fill missing data")
+            return
+        }
 
         if (password !== confirmPassword) {
             alert("Passwords do not match");
@@ -24,12 +29,11 @@ const Register = () => {
             return;
         }
 
-        setRegisteredEmail(enteredEmail);
+        registerUser(email, password); // Call registerUser function
 
         Object.keys(formRefs.current).forEach((key) => {
             formData[key] = formRefs.current[key].value;
         });
-        console.log(formData);
         formRefs.current["firstName"].value = "";
         formRefs.current["lastName"].value = "";
         formRefs.current["email"].value = "";
