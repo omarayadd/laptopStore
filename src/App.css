@@ -122,4 +122,47 @@ span{
     margin: auto;
     margin-top: 30px;
     width: 30%;
+    padding: 5px;
+    border: 2px solid rgb(30, 30, 69);
+    border-radius: 20px; 
+}
+
+.product-card-body{
+    width: 80%;
+    margin: auto;
+}
+
+.product-card-body p,h3{
+    display: inline;
+}
+
+.product-card-body h3{
+    font-size: 20px;
+}
+
+.product-card-body p{
+   margin-left: 50%;
+   font-size: 24px;
+   font-weight: 400;
+}
+
+.product-card button{
+    border-radius: 10px;
+    width: 60%;
+    height: 35px;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid rgb(30, 30, 69);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.product-card button:hover{
+    background-color: rgb(33, 33, 75);
+    color: white;
+}
+
+.product-card a{
+    margin-left: 20px;
+    font-size: 30px;
 }

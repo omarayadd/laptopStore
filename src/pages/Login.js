@@ -15,7 +15,7 @@ const Login = () => {
 
         if (checkUserExists(enteredEmail, enteredPassword)) {
             setIsLoggedIn(true);
-            navigate('/home'); // Redirect to home page
+            navigate('/'); // Redirect to home page
         } else {
             // Email or password is incorrect
             alert("Email or password is incorrect");

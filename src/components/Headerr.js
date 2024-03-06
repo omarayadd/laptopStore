@@ -7,13 +7,14 @@ import { useCart } from "./CartContext";
 
 const Headerr = () => {
     const { isLoggedIn, setIsLoggedIn } = useRegisteredEmail();
-    const { cartCount } = useCart();
+    const { cartCount, setCartCount } = useCart();
     const logout = () =>{
+        setCartCount(0)
         setIsLoggedIn(false)
     }
     return (
         <div className={`header-container ${isLoggedIn ? 'logged-in' : 'logged-out'}`}>
-            <Link to={'/home'}><h2>LapTech</h2></Link>
+            <Link to={'/'}><h2>LapTech</h2></Link>
             <div className="login-part">
                 {isLoggedIn ? (
                     <>
@@ -21,7 +22,7 @@ const Headerr = () => {
                         <FontAwesomeIcon icon={faShoppingCart} />
                         <span class="header-count">{cartCount}</span>
                        </div>
-                        <FontAwesomeIcon icon={faHeart}  color="red"/>
+                       <Link to={'/favourites'}><FontAwesomeIcon icon={faHeart}  color="red"/></Link>
                         <Link onClick={logout} to={'/login'}>Logout</Link>
                     
                     </>

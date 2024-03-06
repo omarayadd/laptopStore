@@ -15,6 +15,7 @@ export const CartProvider = ({ children }) => {
 
     const value = {
         cartCount,
+        setCartCount,
         addToCart
     };
 

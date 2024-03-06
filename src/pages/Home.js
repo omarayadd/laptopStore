@@ -30,6 +30,7 @@ import { Link } from "react-router-dom";
 import { useCart } from "../components/CartContext";
 import { useRegisteredEmail } from "../components/RegisteredEmailProvider";
 import { useNavigate } from "react-router-dom";
+import { useFavorite } from '../components/FavouriteContext';
 
 const products = [
   { id: 1, name: "Acus 1", price: "$800", image: p1 },
@@ -62,6 +63,7 @@ const products = [
 
 const Home = () => {
     const navigate = useNavigate();
+    const { toggleFavorite } = useFavorite();
     const chunkedProducts = products.reduce((acc, _, index) => {
       if (index % 3 === 0) {
         acc.push(products.slice(index, index + 3));
@@ -80,7 +82,6 @@ const Home = () => {
 
     const handleAddToCart = () => {
         if(isLoggedIn){
-            console.log("djdjsj")
             addToCart();
             alert("Product added to cart!");
         }
@@ -100,12 +101,14 @@ const Home = () => {
             <div key={rowIndex} className="product-row">
               {row.map((product) => (
                 <div key={product.id} className="product-card">
+                  <div className="product-card-body">
                   <img src={product.image} alt={product.name} width="100%" height="300px" />
                   <h3>{product.name}</h3>
                   <p>{product.price}</p>
                   <button onClick={addProduct}>Buy Now</button>
                   <Link onClick={handleAddToCart}><FontAwesomeIcon icon={faShoppingCart} className="social-icon" /></Link>
-                  <Link><FontAwesomeIcon icon={faHeart} /></Link>
+                  <Link onClick={() => toggleFavorite(product.id)}><FontAwesomeIcon icon={faHeart} /></Link>
+                  </div>
                 </div>
               ))}
             </div>
