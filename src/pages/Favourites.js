@@ -11,7 +11,7 @@ const Favourites = () => {
       {favorites.length === 0 ? (
         <>
             <p>No favourites yet</p>
-            <Link to='/'><button>Explore items</button></Link>
+            <Link to='/laptopStore'><button>Explore items</button></Link>
         </>
       ) : (
         <ul>

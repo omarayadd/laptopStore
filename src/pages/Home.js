@@ -63,7 +63,7 @@ const products = [
 
 const Home = () => {
     const navigate = useNavigate();
-    const { toggleFavorite } = useFavorite();
+    const {favorites,  toggleFavorite } = useFavorite();
     const chunkedProducts = products.reduce((acc, _, index) => {
       if (index % 3 === 0) {
         acc.push(products.slice(index, index + 3));
@@ -107,7 +107,7 @@ const Home = () => {
                   <p>{product.price}</p>
                   <button onClick={addProduct}>Buy Now</button>
                   <Link onClick={handleAddToCart}><FontAwesomeIcon icon={faShoppingCart} className="social-icon" /></Link>
-                  <Link onClick={() => toggleFavorite(product.id)}><FontAwesomeIcon icon={faHeart} /></Link>
+                  <Link onClick={() => toggleFavorite(product.id)}><FontAwesomeIcon icon={faHeart} className={favorites.includes(product.id) ? 'favorite' : ''} /></Link>
                   </div>
                 </div>
               ))}

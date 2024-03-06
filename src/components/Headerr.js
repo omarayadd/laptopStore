@@ -14,7 +14,7 @@ const Headerr = () => {
     }
     return (
         <div className={`header-container ${isLoggedIn ? 'logged-in' : 'logged-out'}`}>
-            <Link to={'/'}><h2>LapTech</h2></Link>
+            <Link to={'/laptopStore'}><h2>LapTech</h2></Link>
             <div className="login-part">
                 {isLoggedIn ? (
                     <>

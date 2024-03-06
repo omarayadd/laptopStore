@@ -20,7 +20,7 @@ function App() {
             <Route path='/login' element={<Login/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/favourites' element={<Favourites/>}/>
-            <Route path='/' element={<Home/>}/>
+            <Route path='/laptopStore' element={<Home/>}/>
             <Route path="*"  element={<h2>Page Not Found</h2>}/>
           </Routes>
           </FavoriteProvider>

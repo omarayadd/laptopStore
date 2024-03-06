@@ -166,3 +166,7 @@ span{
     margin-left: 20px;
     font-size: 30px;
 }
+
+.favorite {
+    color: red;
+  }
