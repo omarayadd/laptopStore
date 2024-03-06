@@ -4,13 +4,16 @@ import { useRegisteredEmail } from "../components/RegisteredEmailProvider";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { useCart } from "./CartContext";
+import { useFavorite } from './FavouriteContext';
 
 const Headerr = () => {
     const { isLoggedIn, setIsLoggedIn } = useRegisteredEmail();
     const { cartCount, setCartCount } = useCart();
+    const{setFavorites} = useFavorite();
     const logout = () =>{
         setCartCount(0)
         setIsLoggedIn(false)
+        setFavorites([])
     }
     return (
         <div className={`header-container ${isLoggedIn ? 'logged-in' : 'logged-out'}`}>

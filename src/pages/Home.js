@@ -32,7 +32,7 @@ import { useRegisteredEmail } from "../components/RegisteredEmailProvider";
 import { useNavigate } from "react-router-dom";
 import { useFavorite } from '../components/FavouriteContext';
 
-const products = [
+export const products = [
   { id: 1, name: "Acus 1", price: "$800", image: p1 },
   { id: 2, name: "Acus 2", price: "$850", image: p2 },
   { id: 3, name: "Asus 3", price: "$900", image: p3 },
@@ -58,7 +58,6 @@ const products = [
   { id: 23, name: "Macbook 2", price: "$1250", image: p23 },
   { id: 24, name: "Samsung 2", price: "$1300", image: p24 },
   { id: 25, name: "Asus 8", price: "$1500", image: p25 },
-  // Add more products as needed
 ];
 
 const Home = () => {

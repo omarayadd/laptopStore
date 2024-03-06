@@ -107,10 +107,10 @@ span{
     width: 50%;
     margin: auto;
     text-align: center;
-    transform: translateY(280px);
-    font-size: 40px;
+    transform: translateY(260px);
+    font-size: 45px;
     font-weight: bold;
-    color: rgb(33, 37, 168);
+    color: rgb(33, 130, 168);
     overflow-wrap: break-word;
 }
 
@@ -120,13 +120,17 @@ span{
 
 .product-card{
     margin: auto;
-    margin-top: 30px;
-    width: 30%;
+    margin-top: 40px;
+    width: 25%;
     padding: 5px;
     border: 2px solid rgb(30, 30, 69);
     border-radius: 20px; 
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
 
+.product-card:hover{
+    transform: scale(1.2);
+}
 .product-card-body{
     width: 80%;
     margin: auto;
@@ -169,4 +173,72 @@ span{
 
 .favorite {
     color: red;
+  }
+
+
+  /* favourite page */
+ .favourite-container {
+    padding: 20px;
+    text-align: center;
+  }
+ 
+  .favourite-container h2{
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  
+.favourite-container  .product-container {
+    display: flex;
+    overflow-x: auto; 
+    width: 80%;
+    margin: auto;
+  }
+  
+  .favourite-container  .product-card {
+    min-width: 30%; /* Set a minimum width */
+    height: 200px;
+    border: 2px solid rgb(133, 19, 19);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 150px;
+    display: flex;
+    /* justify-content: space-evenly; */
+  }
+  
+  .favourite-container .product-card img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .favourite-container .product-details {
+    padding: 10px;
+  }
+  
+  .favourite-container .product-name {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .favourite-container .product-price {
+    margin-top: 100px;
+    font-size: 30px;
+    color: #888;
+  }
+
+  .favourite-first p{
+    margin-top: 100px;
+    font-size: 30px;
+  }
+  
+  .favourite-first button{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+
+  .favourite-first button:hover{
+    background-color: rgb(22, 22, 102);
+    color: wheat;
   }

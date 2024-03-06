@@ -1,5 +1,3 @@
-// Create a new file FavoriteContext.js
-
 import React, { createContext, useState, useContext } from 'react';
 
 const FavoriteContext = createContext();
@@ -20,7 +18,7 @@ export const FavoriteProvider = ({ children }) => {
   };
 
   return (
-    <FavoriteContext.Provider value={{ favorites, toggleFavorite }}>
+    <FavoriteContext.Provider value={{ favorites, toggleFavorite, setFavorites }}>
       {children}
     </FavoriteContext.Provider>
   );
