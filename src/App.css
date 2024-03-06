@@ -118,7 +118,7 @@ span{
     display: flex;
 }
 
-.product-card{
+.home-container .product-card{
     margin: auto;
     margin-top: 40px;
     width: 25%;
@@ -128,7 +128,7 @@ span{
     transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
 
-.product-card:hover{
+.home-container .product-card:hover{
     transform: scale(1.2);
 }
 .product-card-body{

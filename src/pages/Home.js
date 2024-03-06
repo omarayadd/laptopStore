@@ -106,7 +106,7 @@ const Home = () => {
                   <p>{product.price}</p>
                   <button onClick={addProduct}>Buy Now</button>
                   <Link onClick={handleAddToCart}><FontAwesomeIcon icon={faShoppingCart} className="social-icon" /></Link>
-                  <Link onClick={() => toggleFavorite(product.id)}><FontAwesomeIcon icon={faHeart} className={favorites.includes(product.id) ? 'favorite' : ''} /></Link>
+                  <Link onClick={() => isLoggedIn?toggleFavorite(product.id):alert("you need to login")}><FontAwesomeIcon icon={faHeart} className={favorites.includes(product.id) ? 'favorite' : ''} /></Link>
                   </div>
                 </div>
               ))}
