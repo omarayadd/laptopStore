@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/laptopStore/static/css/main.e9ffb9e1.css",
+    "main.js": "/laptopStore/static/js/main.08a888db.js",
+    "static/media/p14.jpg": "/laptopStore/static/media/p14.a8ebd533420a0dc02121.jpg",
+    "static/media/p19.jpg": "/laptopStore/static/media/p19.bf1d0c6191823ce327fa.jpg",
+    "static/media/p20.jpg": "/laptopStore/static/media/p20.7cf7850bf415b16e269d.jpg",
+    "static/media/p18.jpg": "/laptopStore/static/media/p18.28af7b841c7ef724fec0.jpg",
+    "static/media/p17.jpg": "/laptopStore/static/media/p17.9bbba304eb01922d561b.jpg",
+    "static/media/p10.webp": "/laptopStore/static/media/p10.3414a5df6402d4a145ee.webp",
+    "static/media/p24.jpg": "/laptopStore/static/media/p24.abb4f915349d58302db8.jpg",
+    "static/media/p1.jpg": "/laptopStore/static/media/p1.94cb4219af95a4a31a1c.jpg",
+    "static/media/p22.jpg": "/laptopStore/static/media/p22.f84a11669358fef27d90.jpg",
+    "static/media/laptops.jpg": "/laptopStore/static/media/laptops.58e6461ca56d9e353acb.jpg",
+    "static/media/p4.webp": "/laptopStore/static/media/p4.8036840d06fccc522823.webp",
+    "static/media/p2.jpg": "/laptopStore/static/media/p2.73294a4ba7fe99af98ae.jpg",
+    "static/media/p13.jpg": "/laptopStore/static/media/p13.a6383ace5be5192ed195.jpg",
+    "static/media/p11.jpg": "/laptopStore/static/media/p11.1f9e9cc2618f3f048b30.jpg",
+    "static/media/p5.jpg": "/laptopStore/static/media/p5.5c48f88482397bf9a61b.jpg",
+    "static/media/p12.jpg": "/laptopStore/static/media/p12.80a70f70e555f33a7a42.jpg",
+    "static/media/p16.jpg": "/laptopStore/static/media/p16.87dfb05cd077d89e2370.jpg",
+    "static/media/p21.jpg": "/laptopStore/static/media/p21.749dbfbc1160fae1d2ff.jpg",
+    "static/media/p23.jpg": "/laptopStore/static/media/p23.c274248619d0e34cee1f.jpg",
+    "static/media/p7.jpg": "/laptopStore/static/media/p7.5991f9f74ae39a16f1c4.jpg",
+    "static/media/p25.jpg": "/laptopStore/static/media/p25.1c5834bde4feb25fcf81.jpg",
+    "static/media/p9.webp": "/laptopStore/static/media/p9.482a93184c1b6a6cd15f.webp",
+    "static/media/p3.avif": "/laptopStore/static/media/p3.707d302424ec52a07135.avif",
+    "static/media/p6.jpg": "/laptopStore/static/media/p6.a8aa3875758e09ce608c.jpg",
+    "static/media/p15.webp": "/laptopStore/static/media/p15.2e2199ef0c123369f7d9.webp",
+    "static/media/p8.jpg": "/laptopStore/static/media/p8.13b59c8f77090df119d5.jpg",
+    "index.html": "/laptopStore/index.html",
+    "main.e9ffb9e1.css.map": "/laptopStore/static/css/main.e9ffb9e1.css.map",
+    "main.08a888db.js.map": "/laptopStore/static/js/main.08a888db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9ffb9e1.css",
+    "static/js/main.08a888db.js"
+  ]
+}
