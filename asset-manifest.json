@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/laptopStore/static/css/main.baf8c2a2.css",
-    "main.js": "/laptopStore/static/js/main.97e34e9f.js",
+    "main.css": "/laptopStore/static/css/main.18a3236b.css",
+    "main.js": "/laptopStore/static/js/main.ea2442ab.js",
     "static/media/p14.jpg": "/laptopStore/static/media/p14.a8ebd533420a0dc02121.jpg",
     "static/media/p19.jpg": "/laptopStore/static/media/p19.bf1d0c6191823ce327fa.jpg",
     "static/media/p20.jpg": "/laptopStore/static/media/p20.7cf7850bf415b16e269d.jpg",
@@ -29,11 +29,11 @@
     "static/media/p15.webp": "/laptopStore/static/media/p15.2e2199ef0c123369f7d9.webp",
     "static/media/p8.jpg": "/laptopStore/static/media/p8.13b59c8f77090df119d5.jpg",
     "index.html": "/laptopStore/index.html",
-    "main.baf8c2a2.css.map": "/laptopStore/static/css/main.baf8c2a2.css.map",
-    "main.97e34e9f.js.map": "/laptopStore/static/js/main.97e34e9f.js.map"
+    "main.18a3236b.css.map": "/laptopStore/static/css/main.18a3236b.css.map",
+    "main.ea2442ab.js.map": "/laptopStore/static/js/main.ea2442ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.baf8c2a2.css",
-    "static/js/main.97e34e9f.js"
+    "static/css/main.18a3236b.css",
+    "static/js/main.ea2442ab.js"
   ]
 }
